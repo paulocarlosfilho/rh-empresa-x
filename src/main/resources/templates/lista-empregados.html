@@ -21,7 +21,10 @@
 						<th>Nome</th>
 						<th>E-mail</th>
 						<th>Departamento</th>
-						<th>Ações</th>		
+						<th>Horário</th>
+						<th>Em execução</th>
+						<th>Ações</th>
+								
 					</tr>
 				</thead>
 				<tbody>
@@ -29,6 +32,8 @@
 						<td th:text="${empregado.nome}"></td>
 						<td th:text="${empregado.email}"></td>
 						<td th:text="${empregado.departamento}"></td>
+						<td th:text="${empregado.horario}"></td>
+						<td th:text="${empregado.emExecucao}"></th>
 						<td>
 							<a th:href="@{mostrarEdicoesForm(empregadoId=${empregado.id})}" class="btn btn-dark">Editar</a>
 							<a th:href="@{/apagarEmpregado(empregadoId=${empregado.id})}" class="btn btn-danger ml-2">Apagar</a>

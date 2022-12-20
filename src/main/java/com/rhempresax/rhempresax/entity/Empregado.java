@@ -21,6 +21,26 @@ public class Empregado {
 	private String email;
 	
 	private String departamento;
+	
+	private String horario;
+	
+	private String emExecucao;
+
+	public String getEmExecucao() {
+		return emExecucao;
+	}
+
+	public void setEmExecucao(String emExecucao) {
+		this.emExecucao = emExecucao;
+	}
+
+	public String getHorario() {
+		return horario;
+	}
+
+	public void setHorario(String horario) {
+		this.horario = horario;
+	}
 
 	public Long getId() {
 		return id;
